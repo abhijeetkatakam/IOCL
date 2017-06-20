@@ -1,0 +1,50 @@
+
+=============REQUEST DATA STARTS =========================
+{"Date":"20170616","Time":"1200","PlantCode":"10","MaterialNo":"11","Pressure":"10","Temperature":"10","ProductDip":"10","Density":"10","GaugeType":"o","TankStatus":"o","DipType":"C","PostStatus":"S","Remarks":"No issue"}
+=============REQUEST DATA ENDS ===========================
+
+
+=============RESPONSE DATA STARTS =========================
+{"DOE":null,"Role":null,"UserName":null,"Token":null,"Success":false}
+=============RESPONSE DATA ENDS ===========================
+
+
+=============REQUEST DATA STARTS =========================
+{"Date":"20170616","Time":"1200","PlantCode":"10","MaterialNo":"11","Pressure":"10","Temperature":"10","ProductDip":"10","Density":"10","GaugeType":"o","TankStatus":"o","DipType":"C","PostStatus":"S","Remarks":"No issue"}
+=============REQUEST DATA ENDS ===========================
+
+
+=============RESPONSE DATA STARTS =========================
+{"DOE":null,"Role":null,"UserName":null,"Token":null,"Success":false}
+=============RESPONSE DATA ENDS ===========================
+
+
+=============REQUEST DATA STARTS =========================
+{"Date":"20170616","Time":"1200","PlantCode":"10","MaterialNo":"11","Pressure":"10","Temperature":"10","ProductDip":"10","Density":"10","GaugeType":"o","TankStatus":"o","DipType":"C","PostStatus":"S","Remarks":"No issue"}
+=============REQUEST DATA ENDS ===========================
+
+
+=============RESPONSE DATA STARTS =========================
+{"DOE":null,"Role":null,"UserName":null,"Token":null,"Success":false}
+=============RESPONSE DATA ENDS ===========================
+
+
+=============REQUEST DATA STARTS =========================
+{"Date":"20170616","Time":"1200","PlantCode":"10","MaterialNo":"11","Pressure":"10","Temperature":"10","ProductDip":"10","Density":"10","GaugeType":"o","TankStatus":"o","DipType":"C","PostStatus":"S","Remarks":"No issue"}
+=============REQUEST DATA ENDS ===========================
+
+
+=============RESPONSE DATA STARTS =========================
+{"DOE":null,"Role":null,"UserName":null,"Token":null,"Success":false}
+=============RESPONSE DATA ENDS ===========================
+
+
+=============REQUEST DATA STARTS =========================
+{"Date":"20170616","Time":"1200","PlantCode":"10","MaterialNo":"11","Pressure":"10","Temperature":"10","ProductDip":"10","Density":"10","GaugeType":"o","TankStatus":"o","DipType":"C","PostStatus":"S","Remarks":"No issue"}
+=============REQUEST DATA ENDS ===========================
+
+
+=============RESPONSE DATA STARTS =========================
+{"DOE":null,"Role":null,"UserName":null,"Token":null,"Success":false}
+=============RESPONSE DATA ENDS ===========================
+
