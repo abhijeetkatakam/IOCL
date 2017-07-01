@@ -41,7 +41,7 @@ public class IOCLServiceIntegrations
 		logging=new Logging(System.getProperty("user.dir") + File.separator +"\\Logs");
 	}
 
-	public void createAndSendAPIRequest() throws SQLException
+	public void createAndSendAPIRequest(String currdate,String time) throws SQLException
 	{
 		logger.info("Entered into createAndSendAPIRequest method"+resultSet);
 		if(resultSet!=null)
@@ -59,7 +59,8 @@ public class IOCLServiceIntegrations
 						serviceBean.setMaterialNo(resultSet.getString("MaterialNo"));
 						serviceBean.setTankNo(resultSet.getString("TankNo"));
 
-						String currDT=new SimpleDateFormat("MM/dd/yyyy").format(new Date());
+						//String currDT=new SimpleDateFormat("MM/dd/yyyy").format(new Date());
+						String currDT=currdate;
 						logger.info("CurrentDate:::::::::::::::::"+currDT);
 						Date currDateInDiff=new SimpleDateFormat("MM/dd/yyyy").parse(currDT);
 						logger.info("currDateInDiff:::::::::::::::::"+currDateInDiff);
@@ -67,15 +68,15 @@ public class IOCLServiceIntegrations
 						logger.info("CurrentDate:::::::::::::::::"+currDate);
 						serviceBean.setDate(currDate);
 
-						//serviceBean.setDate(resultSet.getString("DT"));
+					
 
 						SimpleDateFormat displayFormat = new SimpleDateFormat("HHmmss");
 						SimpleDateFormat parseFormat = new SimpleDateFormat("hh:mm:ss a");
-						String time=adapterProperties.getProperty("Time");
+						//String time=adapterProperties.getProperty("Time");
 						Date date = parseFormat.parse(time);
 						serviceBean.setTime(displayFormat.format(date));
 
-						//serviceBean.setTime(resultSet.getString("TM"));
+			
 						String guageType=resultSet.getString("GaugeType");
 						serviceBean.setGaugeType(guageType);
 						if(guageType.equalsIgnoreCase("p"))
@@ -86,7 +87,8 @@ public class IOCLServiceIntegrations
 						{
 							serviceBean.setProductDip(resultSet.getString("ProductDip_s"));
 						}
-						serviceBean.setDensity(resultSet.getString("Density"));
+						Float densityVal=new Float(resultSet.getFloat("Density"));
+						serviceBean.setDensity(densityVal.toString());
 						serviceBean.setTemperature(resultSet.getString("Temperature"));
 						serviceBean.setTankStatus(resultSet.getString("TankStatus"));
 						serviceBean.setPressure(resultSet.getString("Pressure"));
