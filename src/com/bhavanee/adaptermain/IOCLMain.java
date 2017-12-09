@@ -21,6 +21,8 @@ public class IOCLMain
 	private static Properties adapterProperties;
 	public static void main(String[] args)
 	{
+		/*args[0]="2";
+		args[1]="def";*/
 		//Initialising the logger object
 		MiscFiles.initialiseLogger();
 
@@ -31,11 +33,11 @@ public class IOCLMain
 
 		logger.info("====================JOB STARTED=======================");
 		
-		if(null!=args && (args.length<2 || args.length>2))
+	/*	if(null!=args && (args.length<2 || args.length>2))
 		{
 			logger.info("Please provide the command line arguments date and time");
 			System.exit(0);
-		}
+		}*/
 		
 		//Creating the Connection to database
 		Connection connection = null;

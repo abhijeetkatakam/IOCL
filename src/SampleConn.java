@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -23,6 +25,14 @@ public class SampleConn
 			System.out.println("BD::::::"+bd);
 			/*Decimal bd1=new Decimal(0.6);
 			System.out.println("BD::::::"+bd1);*/
+			
+			SimpleDateFormat displayFormat = new SimpleDateFormat("HHmmss");
+			SimpleDateFormat parseFormat = new SimpleDateFormat("hh:mm:ss a");
+			//String time=adapterProperties.getProperty("Time");
+			Date date = parseFormat.parse("04:00:00 AM");
+			System.out.println(displayFormat.format(date));
+			
+			
 			Float f=new Float(.6);
 			System.out.println("f::::"+f.toString());
 			logger.info("main");

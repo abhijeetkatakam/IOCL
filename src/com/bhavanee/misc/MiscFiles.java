@@ -39,7 +39,7 @@ public class MiscFiles
 		} 
 		catch (Exception exception) 
 		{
-			logger.info("Exception caused in the method MYSQLConnectionObject:::::"+exception);
+			logger.info("Exception caused in the method MSAccessConnectionObject:::::"+exception);
 		}
 		return con;
 	}
